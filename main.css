@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url(img-for-navbar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: auto;
+}
+
+ul li{
+    float: left;
+    border-right: 1px solid rgb(46, 51, 54);
+}
+
+ul li:last-child{
+    float: right;
+    border-right: none;
+}
+
+ul li a {
+    display: block;
+    text-align: center;
+    text-decoration-line: none;
+    padding: 8px 12px;
+    color: whitesmoke;
+}
+
+ul li a.active {
+    background-color: tomato;
+}
+
+ul  li  a:hover:not(.active) {
+    background-color: rgb(65, 62, 62);
+}
+
+ul li a:hover.last-child {
+    background-color: rgb(0, 179, 179);
+}
